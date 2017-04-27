@@ -1,0 +1,14 @@
+lane :test do
+  test('Whitebox')
+end
+
+def test(scheme)
+  ensure_git_status_clean
+  cocoapods(use_bundle_exec: true)
+  scan(
+    workspace: "Whitebox.xcworkspace",
+    scheme: scheme,
+    clean: true,
+    devices: ["iPhone 7"]
+  )
+end

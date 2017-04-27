@@ -1,0 +1,27 @@
+whitelist_rules:
+  # Correctable rules
+  - "colon"
+  - "comma"
+  - "leading_whitespace"
+  - "legacy_cggeometry_functions"
+  - "legacy_constrant"
+  - "legacy_constructor"
+  - "legacy_nsgeometry_functions"
+  - "return_arrow_whitespace"
+  - "statement_position"
+  - "trailing_newline"
+  - "trailing_semicolon"
+  - "trailing_whitespace"
+  - "vertical_whitespace"
+  # Other rules
+  - "force_try"
+  - "force_unwrapping"
+  - "todo"
+  - "type_name"
+  - "variable_name"
+type_name:
+  min_length: 1
+  max_length: 40
+variable_name:
+  min_length: 1
+  max_length: 40
