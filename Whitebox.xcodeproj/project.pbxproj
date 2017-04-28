@@ -8,13 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		290A4A3BC4D3880ACA837363 /* Pods_WhiteboxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F769BD6400F9FB607FE25C /* Pods_WhiteboxTests.framework */; };
-		2C283EA71EB334C30040E6F6 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C283EA61EB334C30040E6F6 /* Queue.swift */; };
 		2C283EA91EB338080040E6F6 /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C283EA81EB338080040E6F6 /* Reference.swift */; };
 		2C7CCB551EB2447200106065 /* Whitebox.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C7CCB531EB2447200106065 /* Whitebox.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C7CCB721EB2466800106065 /* Whitebox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3088F01EB243D90024746C /* Whitebox.framework */; };
 		2C7CCB761EB249DE00106065 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7CCB751EB249DE00106065 /* Application.swift */; };
 		2C7CCB781EB24A2C00106065 /* _Development.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7CCB771EB24A2C00106065 /* _Development.swift */; };
-		2C7CCB7C1EB24D3100106065 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7CCB7B1EB24D3100106065 /* Queue.swift */; };
 		2C7CCB7E1EB24E4A00106065 /* Subscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7CCB7D1EB24E4A00106065 /* Subscriber.swift */; };
 		2C7CCB8A1EB255A100106065 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7CCB891EB255A100106065 /* Subscription.swift */; };
 		2CBE249F1EB2600200D05DCF /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBE249E1EB2600200D05DCF /* Persistence.swift */; };
@@ -33,7 +31,6 @@
 
 /* Begin PBXFileReference section */
 		20FCC3D81CAD32575C423B0B /* Pods_Whitebox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Whitebox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C283EA61EB334C30040E6F6 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		2C283EA81EB338080040E6F6 /* Reference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reference.swift; sourceTree = "<group>"; };
 		2C3088F01EB243D90024746C /* Whitebox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Whitebox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C7CCB531EB2447200106065 /* Whitebox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Whitebox.h; sourceTree = "<group>"; };
@@ -42,7 +39,6 @@
 		2C7CCB6D1EB245C600106065 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C7CCB751EB249DE00106065 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		2C7CCB771EB24A2C00106065 /* _Development.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Development.swift; sourceTree = "<group>"; };
-		2C7CCB7B1EB24D3100106065 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		2C7CCB7D1EB24E4A00106065 /* Subscriber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscriber.swift; sourceTree = "<group>"; };
 		2C7CCB891EB255A100106065 /* Subscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
 		2CBE249E1EB2600200D05DCF /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -129,7 +125,6 @@
 				2C7CCB771EB24A2C00106065 /* _Development.swift */,
 				2C7CCB751EB249DE00106065 /* Application.swift */,
 				2CBE249E1EB2600200D05DCF /* Persistence.swift */,
-				2C7CCB7B1EB24D3100106065 /* Queue.swift */,
 				2C7CCB7D1EB24E4A00106065 /* Subscriber.swift */,
 				2C7CCB891EB255A100106065 /* Subscription.swift */,
 				2C7CCB531EB2447200106065 /* Whitebox.h */,
@@ -148,7 +143,6 @@
 		2C7CCB5B1EB2452100106065 /* Whitebox */ = {
 			isa = PBXGroup;
 			children = (
-				2C283EA61EB334C30040E6F6 /* Queue.swift */,
 				2C283EA81EB338080040E6F6 /* Reference.swift */,
 			);
 			path = Whitebox;
@@ -421,7 +415,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C7CCB761EB249DE00106065 /* Application.swift in Sources */,
-				2C7CCB7C1EB24D3100106065 /* Queue.swift in Sources */,
 				2C7CCB781EB24A2C00106065 /* _Development.swift in Sources */,
 				2CBE249F1EB2600200D05DCF /* Persistence.swift in Sources */,
 				2C7CCB7E1EB24E4A00106065 /* Subscriber.swift in Sources */,
@@ -433,7 +426,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C283EA71EB334C30040E6F6 /* Queue.swift in Sources */,
 				2C283EA91EB338080040E6F6 /* Reference.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
