@@ -4,7 +4,6 @@ public final class Application<State> {
     public typealias Action = (State) -> Promise<State>
 
     private let dispatchQueue = DispatchQueue(label: "jp.mitsuse.Whitebox.Application")
-    private let actionQeueu = Queue<Action>()
     private var subscriptions = Set<Subscription<State>>()
 
     private let persistence: AnyPersistence<State>
