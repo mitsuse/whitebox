@@ -16,14 +16,15 @@ public final class Application<State> {
         return notImplemented()
     }
 
-    public func register<Subscriber: Whitebox.Subscriber>(_ subscriber: Subscriber) where Subscriber.State == State {
-        return register(subscriber, on: dispatchQueue)
+    public func register(subscribe: @escaping (State) -> Void) -> Subscription<State> {
+        return register(on: dispatchQueue, subscribe: subscribe)
     }
 
-    public func register<Subscriber: Whitebox.Subscriber>(
-        _ subscriber: Subscriber,
-        on dispatchQueue: DispatchQueue
-    ) where Subscriber.State == State {
+    public func register(on dispatchQueue: DispatchQueue, subscribe: @escaping (State) -> Void) -> Subscription<State> {
+        return notImplemented()
+    }
+
+    public func unregister(_ subscription: Subscription<State>?) {
         return notImplemented()
     }
 }

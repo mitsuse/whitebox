@@ -1,29 +1,23 @@
 import Dispatch
 
-struct Subscription<State> {
-    let id: String
-
-    private weak var subscriber: AnySubscriber<State>?
-
+public struct Subscription<State> {
+    public let id: String
+    private let subscribe: (State) -> Void
     private let dispatchQueue: DispatchQueue
 
-    init<Subscriber: Whitebox.Subscriber>(
-        id: String,
-        subscriber: Subscriber,
-        dispatchQueue: DispatchQueue
-    ) where Subscriber.State == State {
+    init(id: String, subscribe: @escaping (State) -> Void, dispatchQueue: DispatchQueue) {
         self.id = id
-        self.subscriber = any(subscriber)
+        self.subscribe = subscribe
         self.dispatchQueue = dispatchQueue
     }
 }
 
 extension Subscription: Hashable {
-    var hashValue: Int {
+    public var hashValue: Int {
         return id.hashValue
     }
 }
 
-func == <State>(_ x: Subscription<State>, _ y: Subscription<State>) -> Bool {
+public func == <State>(_ x: Subscription<State>, _ y: Subscription<State>) -> Bool {
     return x.id == y.id
 }
