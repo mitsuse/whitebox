@@ -3,7 +3,6 @@ import PromiseKit
 public final class Application<State> {
     public typealias Action = (State) -> Promise<State>
 
-    private let dispatchQueue = DispatchQueue(label: "jp.mitsuse.Whitebox.Application")
     private var subscriptions = Set<Subscription<State>>()
 
     private let persistence: AnyPersistence<State>
@@ -17,7 +16,7 @@ public final class Application<State> {
     }
 
     public func register(subscribe: @escaping (State) -> Void) -> Subscription<State> {
-        return register(on: dispatchQueue, subscribe: subscribe)
+        return register(on: .main, subscribe: subscribe)
     }
 
     public func register(on dispatchQueue: DispatchQueue, subscribe: @escaping (State) -> Void) -> Subscription<State> {
