@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		290A4A3BC4D3880ACA837363 /* Pods_WhiteboxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F769BD6400F9FB607FE25C /* Pods_WhiteboxTests.framework */; };
-		2C283EA91EB338080040E6F6 /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C283EA81EB338080040E6F6 /* Reference.swift */; };
+		2C283EA91EB338080040E6F6 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C283EA81EB338080040E6F6 /* Application.swift */; };
+		2C2BC5181EB5E115000A6C98 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2BC5171EB5E115000A6C98 /* Context.swift */; };
 		2C7CCB551EB2447200106065 /* Whitebox.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C7CCB531EB2447200106065 /* Whitebox.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C7CCB721EB2466800106065 /* Whitebox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3088F01EB243D90024746C /* Whitebox.framework */; };
 		2C7CCB761EB249DE00106065 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7CCB751EB249DE00106065 /* Application.swift */; };
 		2C7CCB781EB24A2C00106065 /* _Development.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7CCB771EB24A2C00106065 /* _Development.swift */; };
 		2C7CCB8A1EB255A100106065 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7CCB891EB255A100106065 /* Subscription.swift */; };
+		2CA9A5D71EB4721900D21360 /* _.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA9A5D51EB470EB00D21360 /* _.swift */; };
 		2CBE249F1EB2600200D05DCF /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBE249E1EB2600200D05DCF /* Persistence.swift */; };
 		906ACA97C157565F3F889FA2 /* Pods_Whitebox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FCC3D81CAD32575C423B0B /* Pods_Whitebox.framework */; };
 /* End PBXBuildFile section */
@@ -30,7 +32,8 @@
 
 /* Begin PBXFileReference section */
 		20FCC3D81CAD32575C423B0B /* Pods_Whitebox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Whitebox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C283EA81EB338080040E6F6 /* Reference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reference.swift; sourceTree = "<group>"; };
+		2C283EA81EB338080040E6F6 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		2C2BC5171EB5E115000A6C98 /* Context.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
 		2C3088F01EB243D90024746C /* Whitebox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Whitebox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C7CCB531EB2447200106065 /* Whitebox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Whitebox.h; sourceTree = "<group>"; };
 		2C7CCB601EB2453600106065 /* WhiteboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhiteboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +42,7 @@
 		2C7CCB751EB249DE00106065 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		2C7CCB771EB24A2C00106065 /* _Development.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Development.swift; sourceTree = "<group>"; };
 		2C7CCB891EB255A100106065 /* Subscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		2CA9A5D51EB470EB00D21360 /* _.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _.swift; sourceTree = "<group>"; };
 		2CBE249E1EB2600200D05DCF /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		480EF55976912AD7C1B3B4DF /* Pods-Whitebox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whitebox.release.xcconfig"; path = "Pods/Target Support Files/Pods-Whitebox/Pods-Whitebox.release.xcconfig"; sourceTree = "<group>"; };
 		55606FE52F6BB4A5F3610AD0 /* Pods-WhiteboxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhiteboxTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhiteboxTests/Pods-WhiteboxTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 				2C7CCB751EB249DE00106065 /* Application.swift */,
 				2CBE249E1EB2600200D05DCF /* Persistence.swift */,
 				2C7CCB891EB255A100106065 /* Subscription.swift */,
+				2C2BC5171EB5E115000A6C98 /* Context.swift */,
 			);
 			path = Whitebox;
 			sourceTree = "<group>";
@@ -140,7 +145,8 @@
 		2C7CCB5B1EB2452100106065 /* Whitebox */ = {
 			isa = PBXGroup;
 			children = (
-				2C283EA81EB338080040E6F6 /* Reference.swift */,
+				2CA9A5D51EB470EB00D21360 /* _.swift */,
+				2C283EA81EB338080040E6F6 /* Application.swift */,
 			);
 			path = Whitebox;
 			sourceTree = "<group>";
@@ -414,6 +420,7 @@
 				2C7CCB761EB249DE00106065 /* Application.swift in Sources */,
 				2C7CCB781EB24A2C00106065 /* _Development.swift in Sources */,
 				2CBE249F1EB2600200D05DCF /* Persistence.swift in Sources */,
+				2C2BC5181EB5E115000A6C98 /* Context.swift in Sources */,
 				2C7CCB8A1EB255A100106065 /* Subscription.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,7 +429,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C283EA91EB338080040E6F6 /* Reference.swift in Sources */,
+				2C283EA91EB338080040E6F6 /* Application.swift in Sources */,
+				2CA9A5D71EB4721900D21360 /* _.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,8 +2,8 @@ import Dispatch
 
 public struct Subscription<State> {
     public let id: String
-    private let subscribe: (State) -> Void
-    private let dispatchQueue: DispatchQueue
+    let subscribe: (State) -> Void
+    let dispatchQueue: DispatchQueue
 
     init(id: String, subscribe: @escaping (State) -> Void, dispatchQueue: DispatchQueue) {
         self.id = id
