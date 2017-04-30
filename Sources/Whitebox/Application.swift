@@ -44,7 +44,7 @@ public final class Application<State> {
     }
 
     public func register(on context: Context, subscribe: @escaping (State) -> Void) -> Subscription<State> {
-        let subscription = Subscription(id: UUID().uuidString, subscribe: subscribe, dispatchQueue: dispatchQueue)
+        let subscription = Subscription(id: UUID().uuidString, subscribe: subscribe, dispatchQueue: context.dispatchQueue)
         dispatchQueue.async {
             if let state = self.state {
                 subscription.dispatchQueue.async { subscription.subscribe(state) }
